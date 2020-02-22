@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    <Button
+        android:id="@+id/firebase_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/Email_field"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="139dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="14dp"
+        android:text="Click to store" />
+
+    <EditText
+        android:id="@+id/Namefield"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+
+
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/Email_field"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Namefield"
+
+        android:hint="Email"></EditText>
+
+    <ListView
+        android:id="@+id/user_list"
+        android:layout_width="match_parent"
+        android:layout_height="508dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/firebase_button"
+
+        android:layout_marginBottom="3dp"
+
+        />
+
+    <Button
+        android:id="@+id/buttongrey"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/email_field"
+
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="100dp"
+        android:text="Grey "
+        android:textSize="15dp" />
+
+</RelativeLayout>

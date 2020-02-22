@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/gradient"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_siteowner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="45dp"
+
+
+                android:text="Name of Site Owner:"
+                android:textSize="17dp"
+                android:textColor="@color/colorwhite"
+                android:padding="10dp"/>
+
+
+            <EditText
+                android:id="@+id/et_owner"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_alignBottom="@+id/tv_siteowner"
+                android:layout_toRightOf="@+id/tv_siteowner"
+                android:backgroundTint="@color/colorwhite"
+                android:inputType="text"
+                android:textColor="@color/colorwhite"></EditText>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/mRelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/cb_wind_compost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="25dp"
+                android:padding="10dp"
+                android:textColor="@color/colorwhite"
+                android:text="Wind Compost" />
+
+            <TextView
+                android:id="@+id/tv_windcompost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cb_wind_compost"
+                android:padding="10dp"
+                android:layout_toRightOf="@+id/cb_wind_compost"
+
+                android:text="Number:"
+                android:textColor="@color/colorwhite" />
+
+            <EditText
+                android:id="@+id/et_windcompost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cb_wind_compost"
+                android:padding="10dp"
+                android:layout_toRightOf="@+id/tv_windcompost"
+
+                android:textColor="@color/colorwhite" />
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btn_add_wind_comp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add nos"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/cb_wind_compost"
+            android:layout_marginLeft="25dp"
+
+            />
+
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnOrderPreserved="true"
+            android:rowOrderPreserved="true"
+            android:columnCount="2"
+
+
+            >
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/plant"-->
+            <!--            android:text="Plant"-->
+            <!--            android:layout_marginLeft="40dp"-->
+            <!--            android:layout_width="100dp"-->
+            <!--            android:layout_marginTop="0dp"-->
+            <!--            />-->
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/cap"-->
+            <!--            android:width="100dp"-->
+            <!--            android:text="Capacity"-->
+            <!--            android:layout_marginTop="0dp"-->
+            <!--            />-->
+
+            <!--        <TextView-->
+            <!--            android:text="Capacity"-->
+            <!--            ></TextView>-->
+
+
+
+        </GridLayout>
+
+
+        <!--  Second    -->
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/cb_vermi_compost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="24dp"
+
+                android:padding="10dp"
+                android:textColor="@color/colorwhite"
+                android:text="Vermi Compost" />
+
+            <TextView
+                android:id="@+id/tv_vermicompost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cb_vermi_compost"
+                android:padding="10dp"
+                android:layout_toRightOf="@id/cb_vermi_compost"
+
+                android:text="Vermi Compost"
+                android:textColor="@color/colorwhite" />
+        </RelativeLayout>
+        <CheckBox
+            android:id="@+id/cb_machine_compost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb_vermi_compost"
+            android:layout_marginTop="24dp"
+            android:layout_alignLeft="@+id/tv_siteowner"
+            android:padding="10dp"
+            android:textColor="@color/colorwhite"
+            android:text="Vermi Compost" />
+
+        <TextView
+            android:id="@+id/tv_machine_compost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cb_machine_compost"
+            android:padding="10dp"
+            android:layout_toRightOf="@+id/tv_siteowner"
+
+            android:text="Vermi Compost"
+            android:textColor="@color/colorwhite" />
+
+        <Button
+            android:id="@+id/btn_add_site_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Site Details"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_machine_compost"/>
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
